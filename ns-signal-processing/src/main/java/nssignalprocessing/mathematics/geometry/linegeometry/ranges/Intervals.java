@@ -22,8 +22,16 @@ package nssignalprocessing.mathematics.geometry.linegeometry.ranges;
  */
 public class Intervals {
     
+    /**
+     * Check whether two intervals are overlapping or not. Border values of intervals are exclusive. 
+     * @param fromA beginning of the first interval
+     * @param toA end of the first interval
+     * @param fromB beginning of the second interval
+     * @param toB end of the second interval
+     * @return true if specified intervals are overlapping. false otherwise. 
+     */
     public static boolean overlaps(int fromA, int toA, int fromB, int toB){
-        return ()&&();
+        return (fromA<toB)&&(fromB<toA);
     }
     
 }
